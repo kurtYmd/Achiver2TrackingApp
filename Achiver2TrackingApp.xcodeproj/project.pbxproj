@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */; };
+		0736BA742B150C0300CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA732B150C0300CE0287 /* ContentView.swift */; };
+		0736BA762B150C0500CE0287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA752B150C0500CE0287 /* Assets.xcassets */; };
+		0736BA792B150C0500CE0287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA782B150C0500CE0287 /* Preview Assets.xcassets */; };
+		0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA7A2B150C0500CE0287 /* Persistence.swift */; };
+		0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */; };
+		0736BA8A2B150C0600CE0287 /* Achiver2TrackingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */; };
+		0736BA942B150C0600CE0287 /* Achiver2TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */; };
+		0736BA962B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0736BA862B150C0600CE0287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0736BA662B150C0300CE0287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0736BA6D2B150C0300CE0287;
+			remoteInfo = Achiver2TrackingApp;
+		};
+		0736BA902B150C0600CE0287 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0736BA662B150C0300CE0287 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0736BA6D2B150C0300CE0287;
+			remoteInfo = Achiver2TrackingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0736BA6E2B150C0300CE0287 /* Achiver2TrackingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achiver2TrackingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppApp.swift; sourceTree = "<group>"; };
+		0736BA732B150C0300CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0736BA752B150C0500CE0287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0736BA782B150C0500CE0287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0736BA7A2B150C0500CE0287 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		0736BA7D2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Achiver2TrackingApp.xcdatamodel; sourceTree = "<group>"; };
+		0736BA7F2B150C0500CE0287 /* Achiver2TrackingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Achiver2TrackingApp.entitlements; sourceTree = "<group>"; };
+		0736BA802B150C0500CE0287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0736BA852B150C0600CE0287 /* Achiver2TrackingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Achiver2TrackingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppTests.swift; sourceTree = "<group>"; };
+		0736BA8F2B150C0600CE0287 /* Achiver2TrackingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Achiver2TrackingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITests.swift; sourceTree = "<group>"; };
+		0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0736BA6B2B150C0300CE0287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA822B150C0600CE0287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA8C2B150C0600CE0287 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0736BA652B150C0300CE0287 = {
+			isa = PBXGroup;
+			children = (
+				0736BA702B150C0300CE0287 /* Achiver2TrackingApp */,
+				0736BA882B150C0600CE0287 /* Achiver2TrackingAppTests */,
+				0736BA922B150C0600CE0287 /* Achiver2TrackingAppUITests */,
+				0736BA6F2B150C0300CE0287 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0736BA6F2B150C0300CE0287 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0736BA6E2B150C0300CE0287 /* Achiver2TrackingApp.app */,
+				0736BA852B150C0600CE0287 /* Achiver2TrackingAppTests.xctest */,
+				0736BA8F2B150C0600CE0287 /* Achiver2TrackingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0736BA702B150C0300CE0287 /* Achiver2TrackingApp */ = {
+			isa = PBXGroup;
+			children = (
+				0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */,
+				0736BA732B150C0300CE0287 /* ContentView.swift */,
+				0736BA752B150C0500CE0287 /* Assets.xcassets */,
+				0736BA7A2B150C0500CE0287 /* Persistence.swift */,
+				0736BA7F2B150C0500CE0287 /* Achiver2TrackingApp.entitlements */,
+				0736BA802B150C0500CE0287 /* Info.plist */,
+				0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */,
+				0736BA772B150C0500CE0287 /* Preview Content */,
+			);
+			path = Achiver2TrackingApp;
+			sourceTree = "<group>";
+		};
+		0736BA772B150C0500CE0287 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0736BA782B150C0500CE0287 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0736BA882B150C0600CE0287 /* Achiver2TrackingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */,
+			);
+			path = Achiver2TrackingAppTests;
+			sourceTree = "<group>";
+		};
+		0736BA922B150C0600CE0287 /* Achiver2TrackingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */,
+				0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */,
+			);
+			path = Achiver2TrackingAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0736BA6D2B150C0300CE0287 /* Achiver2TrackingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0736BA992B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingApp" */;
+			buildPhases = (
+				0736BA6A2B150C0300CE0287 /* Sources */,
+				0736BA6B2B150C0300CE0287 /* Frameworks */,
+				0736BA6C2B150C0300CE0287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Achiver2TrackingApp;
+			productName = Achiver2TrackingApp;
+			productReference = 0736BA6E2B150C0300CE0287 /* Achiver2TrackingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0736BA842B150C0600CE0287 /* Achiver2TrackingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0736BA9C2B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingAppTests" */;
+			buildPhases = (
+				0736BA812B150C0600CE0287 /* Sources */,
+				0736BA822B150C0600CE0287 /* Frameworks */,
+				0736BA832B150C0600CE0287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0736BA872B150C0600CE0287 /* PBXTargetDependency */,
+			);
+			name = Achiver2TrackingAppTests;
+			productName = Achiver2TrackingAppTests;
+			productReference = 0736BA852B150C0600CE0287 /* Achiver2TrackingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0736BA8E2B150C0600CE0287 /* Achiver2TrackingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0736BA9F2B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingAppUITests" */;
+			buildPhases = (
+				0736BA8B2B150C0600CE0287 /* Sources */,
+				0736BA8C2B150C0600CE0287 /* Frameworks */,
+				0736BA8D2B150C0600CE0287 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0736BA912B150C0600CE0287 /* PBXTargetDependency */,
+			);
+			name = Achiver2TrackingAppUITests;
+			productName = Achiver2TrackingAppUITests;
+			productReference = 0736BA8F2B150C0600CE0287 /* Achiver2TrackingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0736BA662B150C0300CE0287 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					0736BA6D2B150C0300CE0287 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					0736BA842B150C0600CE0287 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0736BA6D2B150C0300CE0287;
+					};
+					0736BA8E2B150C0600CE0287 = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = 0736BA6D2B150C0300CE0287;
+					};
+				};
+			};
+			buildConfigurationList = 0736BA692B150C0300CE0287 /* Build configuration list for PBXProject "Achiver2TrackingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0736BA652B150C0300CE0287;
+			productRefGroup = 0736BA6F2B150C0300CE0287 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0736BA6D2B150C0300CE0287 /* Achiver2TrackingApp */,
+				0736BA842B150C0600CE0287 /* Achiver2TrackingAppTests */,
+				0736BA8E2B150C0600CE0287 /* Achiver2TrackingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0736BA6C2B150C0300CE0287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0736BA792B150C0500CE0287 /* Preview Assets.xcassets in Resources */,
+				0736BA762B150C0500CE0287 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA832B150C0600CE0287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA8D2B150C0600CE0287 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0736BA6A2B150C0300CE0287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,
+				0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */,
+				0736BA742B150C0300CE0287 /* ContentView.swift in Sources */,
+				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA812B150C0600CE0287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0736BA8A2B150C0600CE0287 /* Achiver2TrackingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0736BA8B2B150C0600CE0287 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0736BA942B150C0600CE0287 /* Achiver2TrackingAppUITests.swift in Sources */,
+				0736BA962B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0736BA872B150C0600CE0287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0736BA6D2B150C0300CE0287 /* Achiver2TrackingApp */;
+			targetProxy = 0736BA862B150C0600CE0287 /* PBXContainerItemProxy */;
+		};
+		0736BA912B150C0600CE0287 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0736BA6D2B150C0300CE0287 /* Achiver2TrackingApp */;
+			targetProxy = 0736BA902B150C0600CE0287 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0736BA972B150C0600CE0287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0736BA982B150C0600CE0287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0736BA9A2B150C0600CE0287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Achiver2TrackingApp/Achiver2TrackingApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Achiver2TrackingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Achiver2TrackingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0736BA9B2B150C0600CE0287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Achiver2TrackingApp/Achiver2TrackingApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Achiver2TrackingApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Achiver2TrackingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0736BA9D2B150C0600CE0287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Achiver2TrackingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Achiver2TrackingApp";
+			};
+			name = Debug;
+		};
+		0736BA9E2B150C0600CE0287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Achiver2TrackingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Achiver2TrackingApp";
+			};
+			name = Release;
+		};
+		0736BAA02B150C0600CE0287 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Achiver2TrackingApp;
+			};
+			name = Debug;
+		};
+		0736BAA12B150C0600CE0287 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7ZX35MP59W;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kurtymd.Achiver2TrackingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Achiver2TrackingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0736BA692B150C0300CE0287 /* Build configuration list for PBXProject "Achiver2TrackingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0736BA972B150C0600CE0287 /* Debug */,
+				0736BA982B150C0600CE0287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0736BA992B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0736BA9A2B150C0600CE0287 /* Debug */,
+				0736BA9B2B150C0600CE0287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0736BA9C2B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0736BA9D2B150C0600CE0287 /* Debug */,
+				0736BA9E2B150C0600CE0287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0736BA9F2B150C0600CE0287 /* Build configuration list for PBXNativeTarget "Achiver2TrackingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0736BAA02B150C0600CE0287 /* Debug */,
+				0736BAA12B150C0600CE0287 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0736BA7D2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodel */,
+			);
+			currentVersion = 0736BA7D2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodel */;
+			path = Achiver2TrackingApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0736BA662B150C0300CE0287 /* Project object */;
+}
