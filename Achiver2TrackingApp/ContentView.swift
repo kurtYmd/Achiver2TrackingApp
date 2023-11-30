@@ -1,18 +1,18 @@
 //
-//  TestNumericView.swift
+//  ContentView.swift
 //  Achiver2TrackingApp
 //
-//  Created by Bohdan on 28.11.2023.
+//  Created by Bohdan on 30.11.2023.
 //
 
 import SwiftUI
 
-struct TestNumericView: View {
+struct ContentView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #Preview {
-    TestNumericView()
+    ContentView()
 }
