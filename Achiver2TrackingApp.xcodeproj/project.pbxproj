@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		072947942B18BB8200A04F45 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947932B18BB8100A04F45 /* StreakView.swift */; };
+		072947962B18BC3100A04F45 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947952B18BC3100A04F45 /* CreateTaskView.swift */; };
+		072947992B18BC5200A04F45 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947982B18BC5200A04F45 /* ToolBar.swift */; };
+		0729479B2B18BC5C00A04F45 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */; };
+		072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479F2B18C32B00A04F45 /* TaskViewModel.swift */; };
 		0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */; };
-		0736BA742B150C0300CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA732B150C0300CE0287 /* ContentView.swift */; };
 		0736BA762B150C0500CE0287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA752B150C0500CE0287 /* Assets.xcassets */; };
 		0736BA792B150C0500CE0287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA782B150C0500CE0287 /* Preview Assets.xcassets */; };
 		0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA7A2B150C0500CE0287 /* Persistence.swift */; };
@@ -16,6 +20,9 @@
 		0736BA8A2B150C0600CE0287 /* Achiver2TrackingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */; };
 		0736BA942B150C0600CE0287 /* Achiver2TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */; };
 		0736BA962B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */; };
+		0736BAA92B176A4000CE0287 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAA82B176A4000CE0287 /* TaskCardView.swift */; };
+		0736BAAB2B18827400CE0287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAA2B18827400CE0287 /* HomeView.swift */; };
+		0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAC2B18828000CE0287 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		072947932B18BB8100A04F45 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
+		072947952B18BC3100A04F45 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
+		072947982B18BC5200A04F45 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
+		0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
+		0729479F2B18C32B00A04F45 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		0736BA6E2B150C0300CE0287 /* Achiver2TrackingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Achiver2TrackingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppApp.swift; sourceTree = "<group>"; };
-		0736BA732B150C0300CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0736BA752B150C0500CE0287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0736BA782B150C0500CE0287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0736BA7A2B150C0500CE0287 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -50,6 +61,9 @@
 		0736BA8F2B150C0600CE0287 /* Achiver2TrackingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Achiver2TrackingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITests.swift; sourceTree = "<group>"; };
 		0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0736BAA82B176A4000CE0287 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
+		0736BAAA2B18827400CE0287 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		0736BAAC2B18828000CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		072947972B18BC3B00A04F45 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				072947982B18BC5200A04F45 /* ToolBar.swift */,
+				0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		0729479E2B18C28100A04F45 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0729479F2B18C32B00A04F45 /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0736BA652B150C0300CE0287 = {
 			isa = PBXGroup;
 			children = (
@@ -100,14 +131,18 @@
 		0736BA702B150C0300CE0287 /* Achiver2TrackingApp */ = {
 			isa = PBXGroup;
 			children = (
+				0729479E2B18C28100A04F45 /* ViewModel */,
+				072947972B18BC3B00A04F45 /* Components */,
+				0736BAA52B16699500CE0287 /* View */,
+				0736BAA42B16698700CE0287 /* Model */,
 				0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */,
-				0736BA732B150C0300CE0287 /* ContentView.swift */,
 				0736BA752B150C0500CE0287 /* Assets.xcassets */,
 				0736BA7A2B150C0500CE0287 /* Persistence.swift */,
 				0736BA7F2B150C0500CE0287 /* Achiver2TrackingApp.entitlements */,
 				0736BA802B150C0500CE0287 /* Info.plist */,
 				0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */,
 				0736BA772B150C0500CE0287 /* Preview Content */,
+				0736BAAC2B18828000CE0287 /* ContentView.swift */,
 			);
 			path = Achiver2TrackingApp;
 			sourceTree = "<group>";
@@ -135,6 +170,24 @@
 				0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */,
 			);
 			path = Achiver2TrackingAppUITests;
+			sourceTree = "<group>";
+		};
+		0736BAA42B16698700CE0287 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0736BAA52B16699500CE0287 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0736BAA82B176A4000CE0287 /* TaskCardView.swift */,
+				0736BAAA2B18827400CE0287 /* HomeView.swift */,
+				072947932B18BB8100A04F45 /* StreakView.swift */,
+				072947952B18BC3100A04F45 /* CreateTaskView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,10 +320,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				072947942B18BB8200A04F45 /* StreakView.swift in Sources */,
+				072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */,
 				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,
+				0736BAAB2B18827400CE0287 /* HomeView.swift in Sources */,
+				0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */,
 				0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */,
-				0736BA742B150C0300CE0287 /* ContentView.swift in Sources */,
+				072947962B18BC3100A04F45 /* CreateTaskView.swift in Sources */,
+				072947992B18BC5200A04F45 /* ToolBar.swift in Sources */,
 				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,
+				0729479B2B18BC5C00A04F45 /* AddTaskButton.swift in Sources */,
+				0736BAA92B176A4000CE0287 /* TaskCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
