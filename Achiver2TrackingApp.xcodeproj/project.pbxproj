@@ -15,7 +15,6 @@
 		0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */; };
 		0736BA762B150C0500CE0287 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA752B150C0500CE0287 /* Assets.xcassets */; };
 		0736BA792B150C0500CE0287 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0736BA782B150C0500CE0287 /* Preview Assets.xcassets */; };
-		0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA7A2B150C0500CE0287 /* Persistence.swift */; };
 		0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */; };
 		0736BA8A2B150C0600CE0287 /* Achiver2TrackingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */; };
 		0736BA942B150C0600CE0287 /* Achiver2TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */; };
@@ -23,6 +22,7 @@
 		0736BAA92B176A4000CE0287 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAA82B176A4000CE0287 /* TaskCardView.swift */; };
 		0736BAAB2B18827400CE0287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAA2B18827400CE0287 /* HomeView.swift */; };
 		0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAC2B18828000CE0287 /* ContentView.swift */; };
+		079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +52,6 @@
 		0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppApp.swift; sourceTree = "<group>"; };
 		0736BA752B150C0500CE0287 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0736BA782B150C0500CE0287 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0736BA7A2B150C0500CE0287 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0736BA7D2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Achiver2TrackingApp.xcdatamodel; sourceTree = "<group>"; };
 		0736BA7F2B150C0500CE0287 /* Achiver2TrackingApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Achiver2TrackingApp.entitlements; sourceTree = "<group>"; };
 		0736BA802B150C0500CE0287 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,6 +63,7 @@
 		0736BAA82B176A4000CE0287 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
 		0736BAAA2B18827400CE0287 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0736BAAC2B18828000CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +137,6 @@
 				0736BAA42B16698700CE0287 /* Model */,
 				0736BA712B150C0300CE0287 /* Achiver2TrackingAppApp.swift */,
 				0736BA752B150C0500CE0287 /* Assets.xcassets */,
-				0736BA7A2B150C0500CE0287 /* Persistence.swift */,
 				0736BA7F2B150C0500CE0287 /* Achiver2TrackingApp.entitlements */,
 				0736BA802B150C0500CE0287 /* Info.plist */,
 				0736BA7C2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld */,
@@ -186,6 +185,7 @@
 				0736BAAA2B18827400CE0287 /* HomeView.swift */,
 				072947932B18BB8100A04F45 /* StreakView.swift */,
 				072947952B18BC3100A04F45 /* CreateTaskView.swift */,
+				079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -323,9 +323,9 @@
 				072947942B18BB8200A04F45 /* StreakView.swift in Sources */,
 				072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */,
 				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,
+				079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */,
 				0736BAAB2B18827400CE0287 /* HomeView.swift in Sources */,
 				0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */,
-				0736BA7B2B150C0500CE0287 /* Persistence.swift in Sources */,
 				072947962B18BC3100A04F45 /* CreateTaskView.swift in Sources */,
 				072947992B18BC5200A04F45 /* ToolBar.swift in Sources */,
 				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,

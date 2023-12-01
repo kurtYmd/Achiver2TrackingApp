@@ -13,6 +13,6 @@ struct ToolBar: View {
     }
 }
 
-#Preview {
+#Preview { 
     ToolBar()
 }

@@ -9,7 +9,15 @@ import SwiftUI
 
 struct SelectTaskCardView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack{
+                Text("Task name")
+                    .font(.title)
+                    .bold()
+                    .padding()
+        }
+        .frame(width: 350, height: 600)
+        .background(Color.blue)
+        .cornerRadius(20)
     }
 }
 
