@@ -9,12 +9,15 @@ import SwiftUI
 
 struct TaskCardView: View {
     
-    @State var streak: Int = 0
+    @EnvironmentObject var vm: TaskViewModel
+    var streak: Int = 0
+    var title: String = ""
+    //var color: String = ""
     
     var body: some View {
         VStack (alignment: .leading, spacing: 12) {
                 HStack {
-                    Text("Title 1")
+                    Text(title)
                         .font(.title2).bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
                     Text("\(streak)")
@@ -37,17 +40,6 @@ struct TaskCardView: View {
             )
             .frame(height: 250)
             .padding(20)
-        Button(action: {
-            addStreak()
-        }, label: {
-            Text("Complete Task")
-        })
-    }
-    
-    func addStreak() {
-        withAnimation {
-            streak = streak + 1
-        }
     }
 }
 

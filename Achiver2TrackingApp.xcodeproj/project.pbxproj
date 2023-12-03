@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		072947942B18BB8200A04F45 /* StreakView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947932B18BB8100A04F45 /* StreakView.swift */; };
 		072947962B18BC3100A04F45 /* CreateTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947952B18BC3100A04F45 /* CreateTaskView.swift */; };
 		072947992B18BC5200A04F45 /* ToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947982B18BC5200A04F45 /* ToolBar.swift */; };
 		0729479B2B18BC5C00A04F45 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */; };
@@ -22,6 +21,7 @@
 		0736BAA92B176A4000CE0287 /* TaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAA82B176A4000CE0287 /* TaskCardView.swift */; };
 		0736BAAB2B18827400CE0287 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAA2B18827400CE0287 /* HomeView.swift */; };
 		0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAC2B18828000CE0287 /* ContentView.swift */; };
+		074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AC1122B1CA0DE00A2800A /* AddTaskView.swift */; };
 		079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		072947932B18BB8100A04F45 /* StreakView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakView.swift; sourceTree = "<group>"; };
 		072947952B18BC3100A04F45 /* CreateTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTaskView.swift; sourceTree = "<group>"; };
 		072947982B18BC5200A04F45 /* ToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolBar.swift; sourceTree = "<group>"; };
 		0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		0736BAA82B176A4000CE0287 /* TaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCardView.swift; sourceTree = "<group>"; };
 		0736BAAA2B18827400CE0287 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		0736BAAC2B18828000CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		074AC1122B1CA0DE00A2800A /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,9 +183,9 @@
 			children = (
 				0736BAA82B176A4000CE0287 /* TaskCardView.swift */,
 				0736BAAA2B18827400CE0287 /* HomeView.swift */,
-				072947932B18BB8100A04F45 /* StreakView.swift */,
 				072947952B18BC3100A04F45 /* CreateTaskView.swift */,
 				079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */,
+				074AC1122B1CA0DE00A2800A /* AddTaskView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,7 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				072947942B18BB8200A04F45 /* StreakView.swift in Sources */,
+				074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */,
 				072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */,
 				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,
 				079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */,

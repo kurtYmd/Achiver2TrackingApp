@@ -11,12 +11,13 @@ import CoreData
 class TaskViewModel: ObservableObject {
     
     let container: NSPersistentContainer
+    
     @Published var savedEntities: [TaskEntity] = []
 
     init() {
         container = NSPersistentContainer(name: "Achiver2TrackingApp")
         container.loadPersistentStores { (storeDescription, error) in
-            if let error = error{
+            if let error = error {
                 print("Unresolved error \(error)")
             }
         }
@@ -25,18 +26,12 @@ class TaskViewModel: ObservableObject {
     
     func fetchTasks() {
         let request = NSFetchRequest<TaskEntity>(entityName: "TaskEntity")
-        
         do {
             savedEntities = try container.viewContext.fetch(request)
         } catch let error {
             print("Error fetching. \(error)")
         }
     }
-
-    
-    @Published var title: String = ""
-    @Published var color: String = ""
-    @Published var streak: Int = 0
     
     func saveData() {
         do {
@@ -47,27 +42,20 @@ class TaskViewModel: ObservableObject {
         }
     }
 
-    func addTask(context:NSManagedObjectContext) -> Bool {
-        let newTask = TaskEntity(context: context)
+    func addTask(title: String) {
+        let newTask = TaskEntity(context: container.viewContext)
         newTask.title = title
-        newTask.streak = 0
-        newTask.color = color
-        do {
-            try context.save()
-            return true
-        } catch {
-            print("Error saving context: \(error)")
-            return false
-        }
+        saveData()
     }
-    func deleteTask(task: TaskEntity, context:NSManagedObjectContext) -> Bool {
-        context.delete(task)
-        do {
-            try context.save()
-            return true
-        } catch {
-            print("\(error)")
-            return false
-        }
-    }
+    
+//    func deleteTask(task: TaskEntity, context:NSManagedObjectContext) -> Bool {
+//        context.delete(task)
+//        do {
+//            try context.save()
+//            return true
+//        } catch {
+//            print("\(error)")
+//            return false
+//        }
+//    }
 }
