@@ -10,7 +10,7 @@ import SwiftUI
 struct TaskCardView: View {
     
     @EnvironmentObject var vm: TaskViewModel
-    var streak: Int = 0
+    //var streak: Int = 0
     var title: String = ""
     //var color: String = ""
     
@@ -20,7 +20,7 @@ struct TaskCardView: View {
                     Text(title)
                         .font(.title2).bold()
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("\(streak)")
+                    Text("0")
                     Image(systemName: "flame")
                         .font(.footnote.weight(.semibold))
                         .contentTransition(.numericText(value: 0.8))
@@ -30,9 +30,9 @@ struct TaskCardView: View {
                     .frame(width: .infinity, height: 150)
             }
             }
-            .padding(20)
-            .foregroundColor(.white)
-            .background(
+        .padding()
+        .foregroundColor(.white)
+        .background(
                 Color.indigo
             )
             .mask(
