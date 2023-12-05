@@ -25,11 +25,11 @@ struct TaskCardView: View {
                         .font(.footnote.weight(.semibold))
                         .contentTransition(.numericText(value: 0.8))
                 }
-            HStack {
-                RoundedRectangle(cornerRadius: 10)
-                    .frame(width: .infinity, height: 150)
+        HStack {
+            RoundedRectangle(cornerRadius: 10)
+                .frame(width: .infinity, height: 150)
             }
-            }
+        }
         .padding()
         .foregroundColor(.white)
         .background(

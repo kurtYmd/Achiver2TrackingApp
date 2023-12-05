@@ -21,45 +21,28 @@ struct HomeView: View {
         ZStack {
             VStack {
                 TabView(selection: $selectedTab) {
-                    ForEach(Tab.allCases, id: \.rawValue) { tab in
-                        HStack {
-                            
+                    if selectedTab == .doc {
+                        ScrollView() {
+                            ForEach(vm.savedEntities) { task in
+                                TaskCardView(title: task.title ?? "NO N")
+                            }
                         }
+                    } else if selectedTab == .folder {
+                        ScrollView(.horizontal) {
+                            HStack {
+                                ForEach(vm.savedEntities) { task in
+                                    SelectTaskCardView(title: task.title ?? "NO NAME")
+                                }
+                            }
+                            .padding()
+                        }
+                    } else if selectedTab == .paperplane {
+                        AddTaskView()
                     }
                 }
             }
         }
         TabBar(selectedTab: $selectedTab)
-//        VStack(spacing: 20) {
-//            Button(action: {
-//                showAddTaskView.toggle()
-//            }, label: {
-//                Text("+")
-//                    .font(.title)
-//                    .bold()
-//                    .foregroundColor(.black)
-//            })
-//        }.sheet(isPresented: $showAddTaskView) {
-//            AddTaskView()
-//        }
-//        TabView {
-//            ScrollView {
-//                ForEach(vm.savedEntities) { task in
-//                    TaskCardView(title: task.title ?? "NO NAME")
-//                }
-//            }
-//            .tabItem {
-//                Label("Streak", systemImage: "calendar")
-//            }
-//            
-//            ScrollView {
-//                ForEach(vm.savedEntities) { task in
-//                    SelectTaskCardView(title: task.title ?? "NO NAME")
-//                }
-//            }.tabItem {
-//                Label("Tasks", systemImage: "doc.plaintext.fill")
-//            }
-//        }
     }
 }
 

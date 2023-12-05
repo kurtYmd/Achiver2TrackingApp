@@ -31,8 +31,8 @@ struct TabBar: View {
             }
             .frame(width: nil, height: 60)
             .background(.thinMaterial)
+            .opacity(0.8)
             .cornerRadius(10)
-            .padding()
         }
     }
 }
