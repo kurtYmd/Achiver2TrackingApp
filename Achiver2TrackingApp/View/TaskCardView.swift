@@ -33,13 +33,13 @@ struct TaskCardView: View {
         .padding()
         .foregroundColor(.white)
         .background(
-                Color.indigo
-            )
+            Color.indigo )
             .mask(
                 RoundedRectangle(cornerRadius: 15, style: .continuous)
             )
             .frame(height: 250)
-            .padding(20)
+            .padding()
+            .shadow(color: .black ,radius: 10)
     }
 }
 

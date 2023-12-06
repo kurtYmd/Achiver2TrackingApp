@@ -24,17 +24,23 @@ struct HomeView: View {
                     if selectedTab == .doc {
                         ScrollView() {
                             ForEach(vm.savedEntities) { task in
-                                TaskCardView(title: task.title ?? "NO N")
+                                TaskCardView(title: task.title ?? "NO NAME")
                             }
+                            
                         }
                     } else if selectedTab == .folder {
-                        ScrollView(.horizontal) {
-                            HStack {
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            HStack (spacing: 50) {
                                 ForEach(vm.savedEntities) { task in
                                     SelectTaskCardView(title: task.title ?? "NO NAME")
+                                        .onTapGesture {
+                                            withAnimation(.easeIn(duration: 1)) {
+                                                
+                                            }
+                                        }
                                 }
                             }
-                            .padding()
+                            .padding(50)
                         }
                     } else if selectedTab == .paperplane {
                         AddTaskView()

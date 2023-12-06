@@ -22,6 +22,7 @@
 		0736BAAD2B18828000CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAC2B18828000CE0287 /* ContentView.swift */; };
 		074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AC1122B1CA0DE00A2800A /* AddTaskView.swift */; };
 		07538E022B1E6A6A005F34B2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07538E012B1E6A6A005F34B2 /* Tab.swift */; };
+		077EC9842B20FA4A003DE78D /* TimerPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 077EC9832B20FA4A003DE78D /* TimerPie.swift */; };
 		079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		0736BAAC2B18828000CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		074AC1122B1CA0DE00A2800A /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		07538E012B1E6A6A005F34B2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		077EC9832B20FA4A003DE78D /* TimerPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPie.swift; sourceTree = "<group>"; };
 		079960BC2B1A495E00A616A1 /* SelectTaskCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -97,6 +99,7 @@
 				072947982B18BC5200A04F45 /* TabBar.swift */,
 				0729479A2B18BC5C00A04F45 /* AddTaskButton.swift */,
 				07538E012B1E6A6A005F34B2 /* Tab.swift */,
+				077EC9832B20FA4A003DE78D /* TimerPie.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077EC9842B20FA4A003DE78D /* TimerPie.swift in Sources */,
 				074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */,
 				072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */,
 				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,

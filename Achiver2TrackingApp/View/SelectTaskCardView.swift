@@ -11,7 +11,7 @@ struct SelectTaskCardView: View {
     var title: String = ""
     
     var body: some View {
-        VStack{
+        VStack {
             HStack {
                 Text(title)
                     .font(.title)
@@ -19,7 +19,8 @@ struct SelectTaskCardView: View {
                     .position(CGPoint(x: 60.0, y: 40.0))
             }
             VStack(alignment: .trailing) {
-             Circle()
+                TimerPie(endAngle: .degrees(90))
+                    .padding()
             }
             HStack {
                 Button(action: {
@@ -44,11 +45,12 @@ struct SelectTaskCardView: View {
                 .background(Color.black)
                 .cornerRadius(50)
             }
-            .padding(50)
         }
-        .frame(width: 350, height: 600)
-        .background(Color.blue)
+        .padding(20)
+        .frame(width: 300, height: 600)
+        .background(Color.indigo)
         .cornerRadius(20)
+        .shadow(color: .black, radius: 20)
     }
 }
 
