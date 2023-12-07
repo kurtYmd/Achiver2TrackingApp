@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct ContentView: View {
     
     @StateObject var vm = TaskViewModel()
     @State private var selectedTab: Tab = .folder
@@ -47,5 +47,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    ContentView()
 }
