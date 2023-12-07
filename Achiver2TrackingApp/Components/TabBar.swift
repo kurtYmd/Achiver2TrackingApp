@@ -29,7 +29,7 @@ struct TabBar: View {
                     Spacer()
                 }
             }
-            .frame(width: nil, height: 60)
+            .frame(width: nil, height: 30)
             .background(.thinMaterial.opacity(0.1))
             .cornerRadius(10)
         }

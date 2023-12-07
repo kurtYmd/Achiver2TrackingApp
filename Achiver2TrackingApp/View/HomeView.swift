@@ -10,7 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @StateObject var vm = TaskViewModel()
-    @State private var selectedTab: Tab = .paperplane
+    @State private var selectedTab: Tab = .folder
     @State private var showAddTaskView = false
     
     init() {
@@ -21,26 +21,21 @@ struct HomeView: View {
         ZStack {
             VStack {
                 TabView(selection: $selectedTab) {
-                    if selectedTab == .doc {
+                    if selectedTab == .folder {
                         ScrollView() {
                             ForEach(vm.savedEntities) { task in
                                 TaskCardView(title: task.title ?? "NO NAME")
                             }
                             
                         }
-                    } else if selectedTab == .folder {
-                        ScrollView(.horizontal, showsIndicators: false) {
-                            HStack (spacing: 50) {
+                    } else if selectedTab == .doc {
+                        VStack {
+                            TabView {
                                 ForEach(vm.savedEntities) { task in
                                     SelectTaskCardView(title: task.title ?? "NO NAME")
-                                        .onTapGesture {
-                                            withAnimation(.easeIn(duration: 1)) {
-                                                
-                                            }
-                                        }
                                 }
                             }
-                            .padding(50)
+                            .tabViewStyle(.page(indexDisplayMode: .never))
                         }
                     } else if selectedTab == .paperplane {
                         AddTaskView()
