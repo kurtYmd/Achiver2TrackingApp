@@ -23,20 +23,19 @@ struct HomeView: View {
                 TabView(selection: $selectedTab) {
                     if selectedTab == .folder {
                         ScrollView() {
-                            ForEach(vm.savedEntities) { task in
-                                TaskCardView(title: task.title ?? "NO NAME")
+                            VStack (spacing: 10){
+                                ForEach(vm.savedEntities) { task in
+                                    TaskCardView(title: task.title ?? "NO NAME")
+                                }
                             }
-                            
                         }
                     } else if selectedTab == .doc {
-                        VStack {
                             TabView {
                                 ForEach(vm.savedEntities) { task in
-                                    SelectTaskCardView(title: task.title ?? "NO NAME")
+                                    SelectTaskCardView(task: task, vm: vm)
                                 }
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))
-                        }
                     } else if selectedTab == .paperplane {
                         AddTaskView()
                     }

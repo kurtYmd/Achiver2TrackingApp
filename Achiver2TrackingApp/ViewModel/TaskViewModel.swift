@@ -33,6 +33,11 @@ class TaskViewModel: ObservableObject {
         }
     }
     
+    func deleteTask(task: TaskEntity) {
+        container.viewContext.delete(task)
+        saveData()
+    }
+    
     func saveData() {
         do {
             try container.viewContext.save()
@@ -46,6 +51,7 @@ class TaskViewModel: ObservableObject {
         let newTask = TaskEntity(context: container.viewContext)
         newTask.title = title
         saveData()
+        fetchTasks()
     }
     
 //    func deleteTask(task: TaskEntity, context:NSManagedObjectContext) -> Bool {

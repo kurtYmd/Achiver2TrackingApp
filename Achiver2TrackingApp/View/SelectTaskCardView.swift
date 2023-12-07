@@ -8,20 +8,19 @@
 import SwiftUI
 
 struct SelectTaskCardView: View {
-    var title: String = ""
+    var task: TaskEntity
+    var vm: TaskViewModel
     
     var body: some View {
         VStack {
             HStack {
-                Text(title)
+                Text(task.title ?? "")
                     .font(.title)
                     .bold()
                     .position(CGPoint(x: 60.0, y: 40.0))
             }
-            VStack(alignment: .trailing) {
-                TimerPie(endAngle: .degrees(90))
+                TimerPie(endAngle: .degrees(60))
                     .padding()
-            }
             HStack {
                 Button(action: {
                     
@@ -33,13 +32,12 @@ struct SelectTaskCardView: View {
                 .background(Color.black)
                 .cornerRadius(50)
                 
-                
                 Spacer()
                 
                 Button(action: {
-                    
+                    vm.deleteTask(task: task)
                 }, label: {
-                    Text("Pause")
+                    Text("Delete")
                 })
                 .frame(width: 100, height: 50)
                 .background(Color.black)
@@ -54,6 +52,6 @@ struct SelectTaskCardView: View {
     }
 }
 
-#Preview {
-    SelectTaskCardView()
-}
+//#Preview {
+//    SelectTaskCardView(task: task, viewModel: TaskViewModel())
+//}

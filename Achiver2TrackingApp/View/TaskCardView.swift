@@ -37,7 +37,6 @@ struct TaskCardView: View {
             .mask(
                 RoundedRectangle(cornerRadius: 15, style: .continuous)
             )
-            .frame(height: 250)
             .padding()
             .shadow(color: .black ,radius: 10)
     }
