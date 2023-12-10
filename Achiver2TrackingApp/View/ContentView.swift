@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var vm = TaskViewModel()
-    @State private var selectedTab: Tab = .folder
+    @State private var selectedTab: Tab = .clipboard
     @State private var showAddTaskView = false
     
     init() {

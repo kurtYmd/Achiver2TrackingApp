@@ -29,9 +29,9 @@ struct TabBar: View {
                     Spacer()
                 }
             }
-            .frame(width: 250, height: 50)
+            .frame(width: 250, height: 60)
             .background(.black.opacity(0.1))
-            .cornerRadius(10)
+            .cornerRadius(25)
         }
     }
 }

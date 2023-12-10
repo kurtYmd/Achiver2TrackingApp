@@ -11,25 +11,61 @@ struct HomeView: View {
     @ObservedObject var vm = TaskViewModel()
     
     var body: some View {
-        VStack (alignment: .trailing) {
-            VStack  {
+        VStack (alignment: .trailing, spacing: 20) {
+            HStack {
                 Button(action: {
                     
                 }, label: {
                     Text("+")
                         .font(.system(size: 40))
                         .foregroundColor(.indigo)
-            })
+                })
             }
-            VStack(alignment: .leading, spacing: 16) {
-                Text(verbatim: "\(vm.savedEntities.count)")
-                    .font(.system(size: 40))
-                    .bold()
-                    .padding(40)
+            VStack {
+                HStack {
+                    VStack(alignment: .leading, spacing: 16) {
+                        HStack {
+                            Text("Tasks to do")
+                                .font(.caption)
+                                .bold()
+                        }
+                        Text(verbatim: "\(vm.savedEntities.count)")
+                            .font(.system(size: 40))
+                            .bold()
+                    }
+                    .padding(20)
+                    .background(.indigo)
+                    .clipShape(.rect(cornerRadius: 20))
+                    VStack(alignment: .leading, spacing: 16) {
+                        HStack {
+                            Text("First task")
+                                .font(.caption)
+                                .bold()
+                        }
+                        Text(verbatim: "\(vm.savedEntities.first?.title ?? "NO NAME")")
+                            .font(.system(size: 40))
+                            .bold()
+                    }
+                    .padding(20)
+                    .background(.indigo)
+                    .clipShape(.rect(cornerRadius: 20))
+                }
+                .padding()
+                VStack(alignment: .leading, spacing: 16) {
+                    HStack {
+                        Text("First task")
+                            .font(.caption)
+                            .bold()
+                    }
+                    Text(verbatim: "\(vm.savedEntities.first?.title ?? "NO NAME")")
+                        .font(.system(size: 40))
+                        .bold()
+                }
+                .frame(width: 250, height: 100)
+                .background(.indigo)
+                .clipShape(.rect(cornerRadius: 20))
             }
-            .padding(16)
-            .background(.indigo)
-            .clipShape(.rect(cornerRadius: 20))
+            Spacer()
         }
     }
 }

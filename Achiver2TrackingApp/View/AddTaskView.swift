@@ -14,7 +14,6 @@ struct AddTaskView: View {
     //@State private var color: Color = .blue
     
     var body: some View {
-        
         VStack(alignment: .leading, spacing: 20) {
             Text("Create a new task")
                 .font(.largeTitle).bold()
@@ -23,14 +22,22 @@ struct AddTaskView: View {
             TextField("Enter your task", text: $title)
                 .textFieldStyle(.roundedBorder)
             VStack {
-                Button {
-                    guard !title.isEmpty else { return }
-                    vm.addTask(title: title)
-                    title = ""
-                } label: {
-                    Text("Add Task")
+                HStack(alignment: .bottom) {
+                    Button {
+                        guard !title.isEmpty else { return }
+                        vm.addTask(title: title)
+                        title = ""
+                    } label: {
+                        Image(systemName: "checkmark")
+                            .foregroundColor(.white)
+                            .font(.title).bold()
+                    }
                 }
+                .padding(16)
+                .background(.blue)
+                .clipShape(.rect(cornerRadius: 50))
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 550, alignment: Alignment.bottom)
             // Add Timer functionality to set a timer for a new task
             Spacer()
         }
