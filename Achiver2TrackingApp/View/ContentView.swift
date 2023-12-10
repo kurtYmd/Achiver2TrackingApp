@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @StateObject var vm = TaskViewModel()
+    @ObservedObject var vm = TaskViewModel()
     @State private var selectedTab: Tab = .folder
     @State private var showAddTaskView = false
     
@@ -20,7 +20,6 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             VStack {
-                TabView(selection: $selectedTab) {
                     if selectedTab == .folder {
                         ScrollView() {
                             VStack (spacing: 10){
@@ -32,17 +31,23 @@ struct ContentView: View {
                     } else if selectedTab == .doc {
                             TabView {
                                 ForEach(vm.savedEntities) { task in
-                                    SelectTaskCardView(task: task, vm: vm)
+                                    SelectTaskCardView(vm: vm, task: task)
                                 }
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))
                     } else if selectedTab == .paperplane {
-                        AddTaskView()
+                        AddTaskView(vm: vm)
+                    }
+                    else if selectedTab == .clipboard {
+                        HomeView(vm: vm)
                     }
                 }
+            HStack (alignment: .bottom) {
+                TabBar(selectedTab: $selectedTab)
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: Alignment.bottom)
             }
         }
-        TabBar(selectedTab: $selectedTab)
+        
     }
 }
 

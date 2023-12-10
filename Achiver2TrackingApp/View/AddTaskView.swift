@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AddTaskView: View {
     
-    @StateObject var vm = TaskViewModel()
+    @ObservedObject var vm = TaskViewModel()
     @State var title: String = ""
     //@State private var color: Color = .blue
     

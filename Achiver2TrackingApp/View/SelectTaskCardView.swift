@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct SelectTaskCardView: View {
+    @ObservedObject var vm: TaskViewModel
     var task: TaskEntity
-    var vm: TaskViewModel
     
     var body: some View {
         VStack {
@@ -51,7 +51,3 @@ struct SelectTaskCardView: View {
         .shadow(color: .black, radius: 20)
     }
 }
-
-//#Preview {
-//    SelectTaskCardView(task: task, viewModel: TaskViewModel())
-//}

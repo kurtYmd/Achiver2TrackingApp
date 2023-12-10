@@ -8,8 +8,29 @@
 import SwiftUI
 
 struct HomeView: View {
+    @ObservedObject var vm = TaskViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (alignment: .trailing) {
+            VStack  {
+                Button(action: {
+                    
+                }, label: {
+                    Text("+")
+                        .font(.system(size: 40))
+                        .foregroundColor(.indigo)
+            })
+            }
+            VStack(alignment: .leading, spacing: 16) {
+                Text(verbatim: "\(vm.savedEntities.count)")
+                    .font(.system(size: 40))
+                    .bold()
+                    .padding(40)
+            }
+            .padding(16)
+            .background(.indigo)
+            .clipShape(.rect(cornerRadius: 20))
+        }
     }
 }
 
