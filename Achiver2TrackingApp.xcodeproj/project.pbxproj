@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		071D27D22B27627E00B92CD1 /* TaskCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */; };
 		072947992B18BC5200A04F45 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947982B18BC5200A04F45 /* TabBar.swift */; };
 		072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479F2B18C32B00A04F45 /* TaskViewModel.swift */; };
 		07365DDF2B26082C00D516EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365DDE2B26082C00D516EF /* HomeView.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategoryViewModel.swift; sourceTree = "<group>"; };
 		072947982B18BC5200A04F45 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0729479F2B18C32B00A04F45 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		07365DDE2B26082C00D516EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				0729479F2B18C32B00A04F45 /* TaskViewModel.swift */,
+				071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 				079960BD2B1A495E00A616A1 /* SelectTaskCardView.swift in Sources */,
 				0736BAAB2B18827400CE0287 /* ContentView.swift in Sources */,
 				07538E022B1E6A6A005F34B2 /* Tab.swift in Sources */,
+				071D27D22B27627E00B92CD1 /* TaskCategoryViewModel.swift in Sources */,
 				072947992B18BC5200A04F45 /* TabBar.swift in Sources */,
 				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,
 				07365DDF2B26082C00D516EF /* HomeView.swift in Sources */,

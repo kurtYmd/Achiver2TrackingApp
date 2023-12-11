@@ -1,19 +1,19 @@
 //
-//  TaskViewModel.swift
+//  TaskCategoryViewModel.swift
 //  Achiver2TrackingApp
 //
-//  Created by Bohdan on 30.11.2023.
+//  Created by Bohdan on 11.12.2023.
 //
 
 import Foundation
 import CoreData
 
-class TaskViewModel: ObservableObject {
+class TaskCategoryViewModel: ObservableObject {
     
     let container: NSPersistentContainer
     
-    @Published var savedEntities: [TaskEntity] = []
-
+    @Published var savedEntities: [TaskCategoryEntity] = []
+    
     init() {
         container = NSPersistentContainer(name: "Achiver2TrackingApp")
         container.loadPersistentStores { (storeDescription, error) in
@@ -21,11 +21,11 @@ class TaskViewModel: ObservableObject {
                 print("Unresolved error \(error)")
             }
         }
-        fetchTasks()
+        fetchCategories()
     }
     
-    func fetchTasks() {
-        let request = NSFetchRequest<TaskEntity>(entityName: "TaskEntity")
+    func fetchCategories() {
+        let request = NSFetchRequest<TaskCategoryEntity>(entityName: "TaskCategoryEntity")
         do {
             savedEntities = try container.viewContext.fetch(request)
         } catch let error {
@@ -33,23 +33,24 @@ class TaskViewModel: ObservableObject {
         }
     }
     
-    func deleteTask(task: TaskEntity) {
-        container.viewContext.delete(task)
+    func deleteCategory(category: TaskCategoryEntity) {
+        container.viewContext.delete(category)
         saveData()
     }
     
     func saveData() {
         do {
             try container.viewContext.save()
-            fetchTasks()
+            fetchCategories()
         } catch let error {
             print("Error saving. \(error)")
         }
     }
-
-    func addTask(title: String) {
-        let newTask = TaskEntity(context: container.viewContext)
-        newTask.title = title
+    
+    func addTask(name: String) {
+        let newCategory = TaskCategoryEntity(context: container.viewContext)
+        newCategory.name = name
         saveData()
-        fetchTasks()
+        fetchCategories()
     }
+}
