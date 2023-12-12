@@ -11,6 +11,7 @@ struct AddTaskView: View {
     
     @ObservedObject var vm = TaskViewModel()
     @State var title: String = ""
+    @State private var selectedPriority = TaskPriority.high
     //@State private var color: Color = .blue
     
     var body: some View {
@@ -18,7 +19,7 @@ struct AddTaskView: View {
             Text("Create a new task")
                 .font(.largeTitle).bold()
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
-            // COLOR PICKER
+                       // COLOR PICKER
             TextField("Enter your task", text: $title)
                 .textFieldStyle(.roundedBorder)
             VStack {

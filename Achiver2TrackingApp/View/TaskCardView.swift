@@ -2,46 +2,54 @@
 //  TaskCardView.swift
 //  Achiver2TrackingApp
 //
-//  Created by Bohdan on 29.11.2023.
+//  Created by Bohdan on 01.12.2023.
 //
 
 import SwiftUI
 
 struct TaskCardView: View {
-    
-    @EnvironmentObject var vm: TaskViewModel
-    //var streak: Int = 0
-    var title: String = ""
-    //var color: String = ""
+    @ObservedObject var vm: TaskViewModel
+    var task: TaskEntity
     
     var body: some View {
-        VStack (alignment: .leading, spacing: 12) {
-                HStack {
-                    Text(title)
-                        .font(.title2).bold()
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    Text("0")
-                    Image(systemName: "flame")
-                        .font(.footnote.weight(.semibold))
-                        .contentTransition(.numericText(value: 0.8))
-                }
-        HStack {
-            RoundedRectangle(cornerRadius: 10)
-                .frame(width: .infinity, height: 150)
+        VStack {
+            HStack {
+                Text(task.title ?? "")
+                    .font(.title)
+                    .bold()
+                    .position(CGPoint(x: 60.0, y: 40.0))
+            }
+                TimerPie(endAngle: .degrees(60))
+                    .padding()
+            HStack {
+                Button(action: {
+                    
+                }, label: {
+                    Image(systemName: "play.fill")
+                        .foregroundColor(.white)
+                })
+                .frame(width: 100, height: 50)
+                
+                .background(Color.black)
+                .cornerRadius(50)
+                
+                Spacer()
+                
+                Button(action: {
+                    vm.deleteTask(task: task)
+                }, label: {
+                    Image(systemName: "trash.fill")
+                        .foregroundColor(.white)
+                })
+                .frame(width: 100, height: 50)
+                .background(Color.black)
+                .cornerRadius(50)
             }
         }
-        .padding()
-        .foregroundColor(.white)
-        .background(
-            Color.indigo )
-            .mask(
-                RoundedRectangle(cornerRadius: 15, style: .continuous)
-            )
-            .padding()
-            .shadow(color: .black ,radius: 10)
+        .padding(20)
+        .frame(width: 300, height: 600)
+        .background(Color.indigo)
+        .cornerRadius(20)
+        .shadow(color: .black, radius: 20)
     }
-}
-
-#Preview {
-    TaskCardView()
 }

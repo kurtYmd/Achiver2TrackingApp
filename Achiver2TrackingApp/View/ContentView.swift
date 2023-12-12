@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var vm = TaskViewModel()
+    @ObservedObject var vmc = TaskCategoryViewModel()
     @State private var selectedTab: Tab = .clipboard
     @State private var showAddTaskView = false
     
@@ -24,14 +25,14 @@ struct ContentView: View {
                         ScrollView() {
                             VStack (spacing: 10){
                                 ForEach(vm.savedEntities) { task in
-                                    TaskCardView(title: task.title ?? "NO NAME")
+                                    CategoryView(title: task.title ?? "NO NAME")
                                 }
                             }
                         }
                     } else if selectedTab == .doc {
                             TabView {
                                 ForEach(vm.savedEntities) { task in
-                                    SelectTaskCardView(vm: vm, task: task)
+                                    TaskCardView(vm: vm, task: task)
                                 }
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))

@@ -13,7 +13,7 @@ class TaskViewModel: ObservableObject {
     let container: NSPersistentContainer
     
     @Published var savedEntities: [TaskEntity] = []
-
+    
     init() {
         container = NSPersistentContainer(name: "Achiver2TrackingApp")
         container.loadPersistentStores { (storeDescription, error) in
@@ -46,10 +46,11 @@ class TaskViewModel: ObservableObject {
             print("Error saving. \(error)")
         }
     }
-
+    
     func addTask(title: String) {
         let newTask = TaskEntity(context: container.viewContext)
         newTask.title = title
         saveData()
         fetchTasks()
     }
+}
