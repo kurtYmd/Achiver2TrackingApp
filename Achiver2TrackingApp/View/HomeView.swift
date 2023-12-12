@@ -9,18 +9,18 @@ import SwiftUI
 
 struct HomeView: View {
     @ObservedObject var vm = TaskViewModel()
-    
+    @State private var isAddTaskViewOpen = false
+
     var body: some View {
-        VStack {
-            Button(action: {
-                
-            }, label: {
-                Text("+")
-                    .font(.system(size: 40))
-                    .foregroundColor(.indigo)
-            })
-            .padding()
-            .frame(maxWidth: .infinity, alignment: .topTrailing)
+        AddTaskButton()
+            .onTapGesture {
+                withAnimation(.spring(duration: 5)) {
+                    isAddTaskViewOpen.toggle()
+                    print(isAddTaskViewOpen)
+                }
+            }
+        if isAddTaskViewOpen == true {
+            AddTaskView()
         }
         VStack {
             HStack {

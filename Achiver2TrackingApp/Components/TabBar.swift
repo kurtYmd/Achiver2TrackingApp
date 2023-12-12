@@ -37,5 +37,5 @@ struct TabBar: View {
 }
 
 #Preview { 
-    TabBar(selectedTab: .constant(.paperplane))
+    TabBar(selectedTab: .constant(.clipboard))
 }

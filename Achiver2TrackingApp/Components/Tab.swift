@@ -9,7 +9,6 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case folder
-    case paperplane
     case doc
     case clipboard
 }

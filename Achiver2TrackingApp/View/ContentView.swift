@@ -36,8 +36,6 @@ struct ContentView: View {
                                 }
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))
-                    } else if selectedTab == .paperplane {
-                        AddTaskView(vm: vm)
                     }
                     else if selectedTab == .clipboard {
                         HomeView(vm: vm)
