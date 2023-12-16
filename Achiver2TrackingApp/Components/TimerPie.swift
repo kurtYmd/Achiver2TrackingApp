@@ -1,40 +1,32 @@
 //
-//  TimerPie.swift
+//  Timer.swift
 //  Achiver2TrackingApp
 //
-//  Created by Bohdan on 06.12.2023.
+//  Created by Bohdan on 16.12.2023.
 //
 
 import SwiftUI
-import CoreGraphics
 
-struct TimerPie: Shape {
-    var startAngle: Angle = .zero
-    let endAngle: Angle
-    var clockwise = true
+struct TimerPie: View {
+    @State private var timeRemaining: TimeInterval = 10
+    @State private var timer: TimerPie?
+    @State private
     
-    func path(in rect: CGRect) -> Path {
-        let startAngle = startAngle - .degrees(90)
-        let endAngle = endAngle - .degrees(90)
-        
-        let center = CGPoint(x: rect.midX, y: rect.midY)
-        let radius = min(rect.width, rect.height) / 2
-        let start = CGPoint(
-            x: center.x + radius * cos(startAngle.radians),
-            y: center.y + radius * sin(startAngle.radians)
-        )
-        
-        var p = Path()
-        p.move(to: center)
-        p.addLine(to: start)
-        p.addArc(
-            center: center,
-            radius: radius,
-            startAngle: startAngle,
-            endAngle: endAngle,
-            clockwise: !clockwise
-        )
-        p.addLine(to: center)
-        return p
+    var body: some View {
+        NavigationStack {
+            VStack(alignment: .center) {
+                ZStack {
+                    Circle()
+                        .stroke(lineWidth: 20)
+                        .opacity(0.3)
+                    Circle()
+                        
+                }
+            }
+        }
     }
+}
+
+#Preview {
+    TimerPie()
 }
