@@ -19,22 +19,9 @@ struct TaskCardView: View {
                     .bold()
                     .position(CGPoint(x: 60.0, y: 40.0))
             }
-                TimerPie(endAngle: .degrees(60))
+            TimerPie()
                     .padding()
             HStack {
-                Button(action: {
-                    
-                }, label: {
-                    Image(systemName: "play.fill")
-                        .foregroundColor(.white)
-                })
-                .frame(width: 100, height: 50)
-                
-                .background(Color.black)
-                .cornerRadius(50)
-                
-                Spacer()
-                
                 Button(action: {
                     vm.deleteTask(task: task)
                 }, label: {
