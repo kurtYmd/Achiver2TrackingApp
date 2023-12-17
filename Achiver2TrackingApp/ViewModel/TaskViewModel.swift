@@ -13,6 +13,7 @@ class TaskViewModel: ObservableObject {
     let container: NSPersistentContainer
     
     @Published var savedEntities: [TaskEntity] = []
+    @Published var completedTasks: [TaskEntity] = []
     
     init() {
         container = NSPersistentContainer(name: "Achiver2TrackingApp")
@@ -31,6 +32,10 @@ class TaskViewModel: ObservableObject {
         } catch let error {
             print("Error fetching. \(error)")
         }
+    }
+    
+    func completeTask(task: TaskEntity) {
+        
     }
     
     func deleteTask(task: TaskEntity) {
