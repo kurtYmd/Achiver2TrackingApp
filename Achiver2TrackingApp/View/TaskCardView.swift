@@ -22,6 +22,12 @@ struct TaskCardView: View {
             TimerPie()
                     .padding()
             HStack {
+                Button {
+                    vm.completeTask(task: task)
+                } label: {
+                    Image(systemName: "checkmark")
+                }
+
                 Button(action: {
                     vm.deleteTask(task: task)
                 }, label: {

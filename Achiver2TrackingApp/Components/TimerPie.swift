@@ -13,30 +13,28 @@ struct TimerPie: View {
     @State private var isRunning: Bool = false
     
     var body: some View {
-        NavigationStack {
             VStack(alignment: .center) {
                 ZStack {
                     Circle()
                         .stroke(lineWidth: 20)                        
                         .opacity(0.3)
-                    Circle()
-                        .trim(from: 0, to: CGFloat(1 - (timeRemaining / 10)))
-                        .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
-                        .rotationEffect(.degrees(-90))
+                        Circle()
+                            .trim(from: 0, to: CGFloat(1 - (timeRemaining / 10)))
+                            .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
+                            .rotationEffect(.degrees(-90))
                     Text(formattedTime())
+                        .contentTransition(.numericText(value: 0))
                         .font(.largeTitle)
                         .fontWeight(.bold)
                 }
-                .frame(maxWidth: 500)
-                
                 HStack {
                     Button {
-                        isRunning.toggle()
-                        if isRunning {
-                            startTimer()
-                        } else {
-                            stopTimer()
-                        }
+                            isRunning.toggle()
+                            if isRunning {
+                                startTimer()
+                            } else {
+                                stopTimer()
+                            }
                     } label: {
                         Image(systemName: isRunning ? "stop.fill" : "play.fill")
                             .foregroundStyle(.foreground)
@@ -44,8 +42,8 @@ struct TimerPie: View {
                     }
                 }
             }
-            .padding(.horizontal, 30)
-        }
+            .frame(minWidth: 250, minHeight: 250)
+            .padding(50)
     }
     private func formattedTime() -> String {
         let minutes = Int(timeRemaining) / 60
@@ -55,18 +53,22 @@ struct TimerPie: View {
     
     private func startTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { _ in
-            if timeRemaining > 0 {
-                timeRemaining -= 1
-            } else {
-                stopTimer()
+            withAnimation(.spring(duration: 1)) {
+                if timeRemaining > 0 {
+                    timeRemaining -= 1
+                } else {
+                    stopTimer()
+                }
             }
         }
     }
     
     private func stopTimer() {
-        isRunning = false
-        timer?.invalidate()
-        timeRemaining = 10
+        withAnimation(.spring(duration: 1)) {
+            isRunning = false
+            timer?.invalidate()
+            timeRemaining = 10
+        }
     }
 }
 
