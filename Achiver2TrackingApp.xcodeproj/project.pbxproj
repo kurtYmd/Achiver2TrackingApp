@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0714092E2B2E1F09008C2003 /* TimerPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714092D2B2E1F09008C2003 /* TimerPie.swift */; };
+		071409302B2F8F23008C2003 /* CompletedTasksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714092F2B2F8F23008C2003 /* CompletedTasksView.swift */; };
 		071D27D22B27627E00B92CD1 /* TaskCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */; };
 		072947992B18BC5200A04F45 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947982B18BC5200A04F45 /* TabBar.swift */; };
 		072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479F2B18C32B00A04F45 /* TaskViewModel.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		0714092D2B2E1F09008C2003 /* TimerPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPie.swift; sourceTree = "<group>"; };
+		0714092F2B2F8F23008C2003 /* CompletedTasksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedTasksView.swift; sourceTree = "<group>"; };
 		071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategoryViewModel.swift; sourceTree = "<group>"; };
 		072947982B18BC5200A04F45 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0729479F2B18C32B00A04F45 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				079960BC2B1A495E00A616A1 /* TaskCardView.swift */,
 				074AC1122B1CA0DE00A2800A /* AddTaskView.swift */,
 				07365DDE2B26082C00D516EF /* HomeView.swift */,
+				0714092F2B2F8F23008C2003 /* CompletedTasksView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */,
 				072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */,
 				0789D02A2B28D61E003A9914 /* AddTaskButton.swift in Sources */,
+				071409302B2F8F23008C2003 /* CompletedTasksView.swift in Sources */,
 				0736BA7E2B150C0500CE0287 /* Achiver2TrackingApp.xcdatamodeld in Sources */,
 				0714092E2B2E1F09008C2003 /* TimerPie.swift in Sources */,
 				079960BD2B1A495E00A616A1 /* TaskCardView.swift in Sources */,
