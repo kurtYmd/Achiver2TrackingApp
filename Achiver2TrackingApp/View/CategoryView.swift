@@ -39,7 +39,7 @@ struct CategoryView: View {
         .padding()
         .foregroundColor(.white)
         .background(
-            Color.indigo )
+            Color.black )
             .mask(
                 RoundedRectangle(cornerRadius: 15, style: .continuous)
             )

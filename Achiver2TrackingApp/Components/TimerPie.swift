@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TimerPie: View {
-    @State private var timeRemaining: TimeInterval = 10
+    @State private var timeRemaining: TimeInterval = 25
     @State private var timer: Timer?
     @State private var isRunning: Bool = false
     
@@ -19,7 +19,7 @@ struct TimerPie: View {
                         .stroke(lineWidth: 20)                        
                         .opacity(0.3)
                         Circle()
-                            .trim(from: 0, to: CGFloat(1 - (timeRemaining / 10)))
+                            .trim(from: 0, to: CGFloat(1 - (timeRemaining / 25)))
                             .stroke(style: StrokeStyle(lineWidth: 20, lineCap: .round, lineJoin: .round))
                             .rotationEffect(.degrees(-90))
                     Text(formattedTime())
@@ -67,7 +67,7 @@ struct TimerPie: View {
         withAnimation(.spring(duration: 1)) {
             isRunning = false
             timer?.invalidate()
-            timeRemaining = 10
+            timeRemaining = 25
         }
     }
 }

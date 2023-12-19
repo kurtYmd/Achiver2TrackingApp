@@ -26,7 +26,11 @@ struct TaskCardView: View {
                     vm.completeTask(task: task)
                 } label: {
                     Image(systemName: "checkmark")
+                        .foregroundColor(.white)
                 }
+                .frame(width: 100, height: 50)
+                .background(Color.black)
+                .cornerRadius(50)
 
                 Button(action: {
                     vm.deleteTask(task: task)
@@ -41,7 +45,7 @@ struct TaskCardView: View {
         }
         .padding(20)
         .frame(width: 300, height: 600)
-        .background(Color.indigo)
+        .background(Color.white)
         .cornerRadius(20)
         .shadow(color: .black, radius: 20)
     }
