@@ -11,7 +11,7 @@ struct ContentView: View {
     
     @ObservedObject var vm = TaskViewModel()
     @ObservedObject var vmc = TaskCategoryViewModel()
-    @State private var selectedTab: Tab = .clipboard
+    @State private var selectedTab: Tab = .house
     @State private var showAddTaskView = false
     
     init() {
@@ -36,7 +36,7 @@ struct ContentView: View {
                                 }
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))
-                    } else if selectedTab == .bookmark {
+                    } else if selectedTab == .house {
                         HomeView()
                     }
                     else if selectedTab == .clipboard {
