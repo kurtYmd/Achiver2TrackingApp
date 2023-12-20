@@ -37,9 +37,7 @@ struct ContentView: View {
                             }
                             .tabViewStyle(.page(indexDisplayMode: .never))
                     } else if selectedTab == .bookmark {
-                        ForEach(vm.completedTasks) { task in
-                            Text(task.title ?? "no name")
-                        }
+                        HomeView()
                     }
                     else if selectedTab == .clipboard {
                         AddTaskView(vm: vm)
