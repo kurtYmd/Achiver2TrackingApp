@@ -23,7 +23,7 @@ struct TaskCardView: View {
                     .padding()
             HStack {
                 Button {
-                    vm.completeTask(task: task)
+                    
                 } label: {
                     Image(systemName: "checkmark")
                         .foregroundColor(.white)

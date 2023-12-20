@@ -8,8 +8,8 @@
 import SwiftUI
 
 enum Tab: String, CaseIterable {
-    case folder
+    case house
     case doc
     case clipboard
-    case bookmark
+    case folder
 }
