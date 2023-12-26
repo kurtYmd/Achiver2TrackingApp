@@ -11,7 +11,7 @@ struct AddTaskView: View {
     
     @ObservedObject var vm = TaskViewModel()
     @State var title: String = ""
-    @State private var selectedPriority = TaskPriority.high
+    @State private var minutes: Double = 0.0
     //@State private var color: Color = .blue
     
     var body: some View {
@@ -20,8 +20,13 @@ struct AddTaskView: View {
                 .font(.largeTitle).bold()
                 .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
                        // COLOR PICKER
-            TextField("Enter your task", text: $title)
+            TextField("Enter your task name", text: $title)
                 .textFieldStyle(.roundedBorder)
+            Picker("Time Unit", selection: $minutes) {
+                        ForEach([0, 30, 60, 120, 180, 240], id: \.self) { time in
+                            Text("\(time) minutes")
+                        }
+                    }
             VStack {
                 HStack(alignment: .bottom) {
                     Button {

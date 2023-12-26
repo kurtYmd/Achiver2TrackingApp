@@ -21,6 +21,7 @@
 		0736BA962B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */; };
 		0736BAA92B176A4000CE0287 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAA82B176A4000CE0287 /* CategoryView.swift */; };
 		0736BAAB2B18827400CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAA2B18827400CE0287 /* ContentView.swift */; };
+		074755C62B3B101A00FE4C0A /* TimePickerScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074755C52B3B101A00FE4C0A /* TimePickerScroll.swift */; };
 		074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AC1122B1CA0DE00A2800A /* AddTaskView.swift */; };
 		07538E022B1E6A6A005F34B2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07538E012B1E6A6A005F34B2 /* Tab.swift */; };
 		0789D02A2B28D61E003A9914 /* AddTaskButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0789D0292B28D61E003A9914 /* AddTaskButton.swift */; };
@@ -64,6 +65,7 @@
 		0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0736BAA82B176A4000CE0287 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0736BAAA2B18827400CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		074755C52B3B101A00FE4C0A /* TimePickerScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerScroll.swift; sourceTree = "<group>"; };
 		074AC1122B1CA0DE00A2800A /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		07538E012B1E6A6A005F34B2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		0789D0292B28D61E003A9914 /* AddTaskButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskButton.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				0714092D2B2E1F09008C2003 /* TimerPie.swift */,
 				072947982B18BC5200A04F45 /* TabBar.swift */,
 				0789D0292B28D61E003A9914 /* AddTaskButton.swift */,
+				074755C52B3B101A00FE4C0A /* TimePickerScroll.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -339,6 +342,7 @@
 				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,
 				07365DDF2B26082C00D516EF /* HomeView.swift in Sources */,
 				0736BAA92B176A4000CE0287 /* CategoryView.swift in Sources */,
+				074755C62B3B101A00FE4C0A /* TimePickerScroll.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

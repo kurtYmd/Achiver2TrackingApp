@@ -7,9 +7,59 @@
 
 import SwiftUI
 
+
 struct TimePickerScroll: View {
+    @State private var hours = 0
+    @State private var minutes = 0
+    @State private var seconds = 0
+    
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            VStack {
+                Text("hours")
+                ScrollView (showsIndicators: false) {
+                    ForEach(0..<10) { time in
+                        Text("\(time)")
+                            .onTapGesture {
+                            if time >= hours {
+                                hours = time
+                            }
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+            }
+            VStack {
+                Text("minutes")
+                ScrollView (showsIndicators: false) {
+                    ForEach(0..<10) { time in
+                            Text("\(time)")
+                            .onTapGesture {
+                            if time >= minutes {
+                                minutes = time
+                            }
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+            }
+            VStack {
+                Text("seconds")
+                ScrollView (showsIndicators: false) {
+                    ForEach(0..<10) { time in
+                            Text("\(time)")
+                            .onTapGesture {
+                            if time >= minutes {
+                                minutes = time
+                            }
+                        }
+                    }
+                }
+                .frame(maxWidth: .infinity, maxHeight: 50)
+            }
+        }
+        .padding()
     }
 }
 

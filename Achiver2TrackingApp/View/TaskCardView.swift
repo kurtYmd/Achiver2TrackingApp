@@ -19,7 +19,7 @@ struct TaskCardView: View {
                     .bold()
                     .position(CGPoint(x: 60.0, y: 40.0))
             }
-            TimerPie()
+            TimerPie(timeRemaining: 25)
                     .padding()
             HStack {
                 Button {
@@ -45,7 +45,7 @@ struct TaskCardView: View {
         }
         .padding(20)
         .frame(width: 300, height: 600)
-        .background(Color.white)
+        .background(Color.gray)
         .cornerRadius(20)
         .shadow(color: .black, radius: 20)
     }
