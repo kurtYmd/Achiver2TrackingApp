@@ -7,12 +7,33 @@
 
 import SwiftUI
 
-struct TimerPickerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+struct TimePickerView: View {
+    
+    private let pickerViewTitlePadding: CGFloat = 4.0
 
-#Preview {
-    TimerPickerView()
+    let title: String
+    let range: ClosedRange<Int>
+    let binding: Binding<Int>
+
+    var body: some View {
+        HStack(spacing: -pickerViewTitlePadding) {
+            Picker(title, selection: binding) {
+                ForEach(range, id: \.self) { timeIncrement in
+                    HStack {
+                        // Forces the text in the Picker to be
+                        // right-aligned
+                        Spacer()
+                        Text("\(timeIncrement)")
+                            .foregroundColor(.black)
+                            .multilineTextAlignment(.trailing)
+                    }
+                }
+            }
+            .pickerStyle(InlinePickerStyle())
+            .labelsHidden()
+
+            Text(title)
+                .fontWeight(.bold)
+        }
+    }
 }

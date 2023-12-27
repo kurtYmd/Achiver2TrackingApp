@@ -22,11 +22,7 @@ struct AddTaskView: View {
                        // COLOR PICKER
             TextField("Enter your task name", text: $title)
                 .textFieldStyle(.roundedBorder)
-            Picker("Time Unit", selection: $minutes) {
-                        ForEach([0, 30, 60, 120, 180, 240], id: \.self) { time in
-                            Text("\(time) minutes")
-                        }
-                    }
+            TimerView()
             VStack {
                 HStack(alignment: .bottom) {
                     Button {
