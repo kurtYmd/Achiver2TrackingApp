@@ -11,5 +11,4 @@ enum Tab: String, CaseIterable {
     case house
     case doc
     case clipboard
-    case folder
 }

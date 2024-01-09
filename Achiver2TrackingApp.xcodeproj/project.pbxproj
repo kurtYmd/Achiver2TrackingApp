@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0714092E2B2E1F09008C2003 /* TimerPie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0714092D2B2E1F09008C2003 /* TimerPie.swift */; };
-		071D27D22B27627E00B92CD1 /* TaskCategoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */; };
 		072947992B18BC5200A04F45 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072947982B18BC5200A04F45 /* TabBar.swift */; };
 		072947A02B18C32B00A04F45 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729479F2B18C32B00A04F45 /* TaskViewModel.swift */; };
 		07365DDF2B26082C00D516EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07365DDE2B26082C00D516EF /* HomeView.swift */; };
@@ -19,7 +18,6 @@
 		0736BA8A2B150C0600CE0287 /* Achiver2TrackingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA892B150C0600CE0287 /* Achiver2TrackingAppTests.swift */; };
 		0736BA942B150C0600CE0287 /* Achiver2TrackingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */; };
 		0736BA962B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */; };
-		0736BAA92B176A4000CE0287 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAA82B176A4000CE0287 /* CategoryView.swift */; };
 		0736BAAB2B18827400CE0287 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0736BAAA2B18827400CE0287 /* ContentView.swift */; };
 		074AC1132B1CA0DE00A2800A /* AddTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074AC1122B1CA0DE00A2800A /* AddTaskView.swift */; };
 		07538E022B1E6A6A005F34B2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07538E012B1E6A6A005F34B2 /* Tab.swift */; };
@@ -49,7 +47,6 @@
 
 /* Begin PBXFileReference section */
 		0714092D2B2E1F09008C2003 /* TimerPie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerPie.swift; sourceTree = "<group>"; };
-		071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCategoryViewModel.swift; sourceTree = "<group>"; };
 		072947982B18BC5200A04F45 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0729479F2B18C32B00A04F45 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
 		07365DDE2B26082C00D516EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -65,7 +62,6 @@
 		0736BA8F2B150C0600CE0287 /* Achiver2TrackingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Achiver2TrackingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0736BA932B150C0600CE0287 /* Achiver2TrackingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITests.swift; sourceTree = "<group>"; };
 		0736BA952B150C0600CE0287 /* Achiver2TrackingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achiver2TrackingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0736BAA82B176A4000CE0287 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		0736BAAA2B18827400CE0287 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		074AC1122B1CA0DE00A2800A /* AddTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskView.swift; sourceTree = "<group>"; };
 		07538E012B1E6A6A005F34B2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -117,7 +113,6 @@
 			children = (
 				07E615352B3C903200E4D19A /* TimerViewModel.swift */,
 				0729479F2B18C32B00A04F45 /* TaskViewModel.swift */,
-				071D27D12B27627E00B92CD1 /* TaskCategoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -195,7 +190,6 @@
 		0736BAA52B16699500CE0287 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0736BAA82B176A4000CE0287 /* CategoryView.swift */,
 				0736BAAA2B18827400CE0287 /* ContentView.swift */,
 				079960BC2B1A495E00A616A1 /* TaskCardView.swift */,
 				074AC1122B1CA0DE00A2800A /* AddTaskView.swift */,
@@ -345,12 +339,10 @@
 				07E615382B3C911600E4D19A /* TimerView.swift in Sources */,
 				0736BAAB2B18827400CE0287 /* ContentView.swift in Sources */,
 				07538E022B1E6A6A005F34B2 /* Tab.swift in Sources */,
-				071D27D22B27627E00B92CD1 /* TaskCategoryViewModel.swift in Sources */,
 				072947992B18BC5200A04F45 /* TabBar.swift in Sources */,
 				0736BA722B150C0300CE0287 /* Achiver2TrackingAppApp.swift in Sources */,
 				07E615362B3C903200E4D19A /* TimerViewModel.swift in Sources */,
 				07365DDF2B26082C00D516EF /* HomeView.swift in Sources */,
-				0736BAA92B176A4000CE0287 /* CategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

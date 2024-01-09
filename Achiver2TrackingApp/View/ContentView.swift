@@ -10,7 +10,6 @@ import SwiftUI
 struct ContentView: View {
     
     @ObservedObject var vm = TaskViewModel()
-    @ObservedObject var vmc = TaskCategoryViewModel()
     @State private var selectedTab: Tab = .house
     @State private var showAddTaskView = false
     
@@ -21,15 +20,7 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             VStack {
-                    if selectedTab == .folder {
-                        ScrollView() {
-                            VStack (spacing: 10){
-                                ForEach(vm.savedEntities) { task in
-                                    CategoryView(title: task.title ?? "NO NAME")
-                                }
-                            }
-                        }
-                    } else if selectedTab == .doc {
+                    if selectedTab == .doc {
                             TabView {
                                 ForEach(vm.savedEntities) { task in
                                     TaskCardView(vm: vm, task: task)

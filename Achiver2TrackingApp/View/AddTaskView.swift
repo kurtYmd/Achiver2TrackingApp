@@ -35,13 +35,13 @@ struct AddTaskView: View {
                             .font(.title).bold()
                     }
                 }
-                .padding(16)
+                .padding(18)
                 .background(.blue)
                 .clipShape(.rect(cornerRadius: 50))
             }
-            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 550, alignment: Alignment.bottom)
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: 0, alignment: Alignment.bottom)
+            
             // Add Timer functionality to set a timer for a new task
-            Spacer()
         }
         .padding(.horizontal)
     }
